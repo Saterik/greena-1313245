@@ -1,70 +1,48 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
+Инструкция по локальному запуску проекта SWILL Chat
+Этот проект представляет собой веб-интерфейс для отправки и получения сообщений через сервис Green-API (WhatsApp), разработанный на стеке React + Node.js.
+🛠 Технологический стек
+Frontend: React, Axios
+Backend: Node.js, Express
+API: Green-API (WhatsApp)
+📋 Предварительные требования
+Перед запуском убедитесь, что на вашем компьютере установлены:
+Node.js (версия 14 или выше) — Скачать здесь
+npm (обычно идет в комплекте с Node.js)
+Аккаунт в Green-API с созданным инстансом WhatsApp.
+🚀 Пошаговый запуск
+Шаг 1: Клонирование репозитория
+Склонируйте проект на свой компьютер и перейдите в папку с проектом:
+bash
+12
+Шаг 2: Установка зависимостей
+Установите все необходимые пакеты для работы как фронтенда, так и бэкенда:
+bash
+1
+Шаг 3: Запуск сервера (Backend)
+Откройте первый терминал и запустите Node.js сервер, который будет выступать в роли прокси для запросов к Green-API:
+bash
+1
+Сервер запустится на порту 5000.
+Шаг 4: Запуск клиентской части (Frontend)
+Откройте второй терминал (не закрывая первый) и запустите React-приложение в режиме разработки:
+bash
+1
+Приложение откроется в браузере по адресу http://localhost:3000.
+🔑 Использование приложения
+Перейдите в личный кабинет Green-API и скопируйте данные вашего инстанса:
+ID Instance
+API Token Instance
+API URL (например, https://7201.api.green-api.com)
+Введите эти данные в форму авторизации на сайте.
+Нажмите "Подключиться". Система проверит статус инстанса.
+Введите номер телефона получателя в международном формате (без плюса, например: 79991234567) и нажмите "Начать чат".
+Отправляйте сообщения и наблюдайте за ответами в реальном времени.
+📦 Сборка для продакшена
+Если вы хотите развернуть проект на собственном сервере:
+Создайте оптимизированную сборку React:
+bash
+1
+Папка build будет содержать статические файлы, которые необходимо разместить на сервере.
+Запустите server.js на вашем хостинге (рекомендуется использовать PM2 для стабильной работы).
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
