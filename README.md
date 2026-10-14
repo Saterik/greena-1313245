@@ -19,6 +19,6 @@
 
 ### 1. Клонирование и установка зависимостей
 ```bash
-git clone <URL_ВАШЕГО_РЕПОЗИТОРИЯ>
+git clone <https://github.com/Saterik/greena-1313245>
 cd swill-chat
 npm install
